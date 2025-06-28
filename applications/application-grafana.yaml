@@ -18,3 +18,8 @@ spec:
   - repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd
     targetRevision: feat/day2
     ref: values
+  syncPolicy:
+    automated:
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

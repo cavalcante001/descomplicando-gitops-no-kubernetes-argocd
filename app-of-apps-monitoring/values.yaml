@@ -1,0 +1,8 @@
+# test
+argocd:
+  prometheus:
+    enabled: false
+    ingress: "https://prometheus.gomesprogramador.com.br"
+  grafana:
+    enabled: false
+    ingress: "https://grafana.gomesprogramador.com.br"

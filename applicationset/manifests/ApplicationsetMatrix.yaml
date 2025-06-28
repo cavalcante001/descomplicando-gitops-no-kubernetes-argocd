@@ -17,7 +17,7 @@ spec:
           - git:
               repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd.git
               revision: feat/day3
-              pathParamPrefix: "cfg"
+              pathParamPrefix: cfg
               files:
                 - path: applicationset/cofigs/dev.json
   template:

@@ -7,24 +7,19 @@ spec:
   goTemplate: true
   goTemplateOptions: ["missingkey=error"]
   generators:
-  - matrix:
-      generators:
-        - git:
-            repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd.git
-            revision: feat/day3
-            directories:
-            - path: applicationset/apps/*/helm
-        - git:
-            repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd.git
-            revision: feat/day3
-            pathParamsPrefix: "cfg"
-            files:
-            - path: applicationset/cofigs/dev.json
-  - git:
-      repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd.git
-      revision: feat/day3
-      directories:
-      - path: applicationset/apps/*/helm
+    - matrix:
+        generators:
+          - git:
+              repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd.git
+              revision: feat/day3
+              directories:
+              - path: applicationset/apps/*/helm
+          - git:
+              repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd.git
+              revision: feat/day3
+              pathParamPrefix: "cfg"
+              files:
+                - path: applicationset/cofigs/dev.json
   template:
     metadata:
       name: '{{index .path.segments 2}}-{{.cluster.nome}}'

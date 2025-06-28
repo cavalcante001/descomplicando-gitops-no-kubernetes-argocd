@@ -1,5 +1,5 @@
 argocd:
-  giropops-senhas:
+  giropopsSenhas:
     enabled: true
-  randomlogger-app:
+  randomloggerApp:
     enabled: true

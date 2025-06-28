@@ -12,9 +12,9 @@ spec:
     helm:
       parameters:
         - name: argocd.giropopsSenhas.enabled
-          value: "true"
+          value: true
         - name: argocd.randomloggerApp.enabled
-          value: "true"
+          value: true
   destination:
     server: https://45.159.228.156:6443
     namespace: giropops-senhas

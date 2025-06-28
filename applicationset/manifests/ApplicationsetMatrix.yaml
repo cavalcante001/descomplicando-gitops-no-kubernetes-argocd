@@ -19,7 +19,7 @@ spec:
               revision: feat/day3
               pathParamPrefix: cfg
               files:
-                - path: applicationset/cofigs/dev.json
+                - path: applicationset/configs/dev.json
   template:
     metadata:
       name: '{{index .path.segments 2}}-{{.cluster.nome}}'

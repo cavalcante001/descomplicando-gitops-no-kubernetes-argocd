@@ -6,7 +6,6 @@ metadata:
 spec:
   project: default
   source:
-    helm: {}
     repoURL: https://github.com/cavalcante001/descomplicando-gitops-no-kubernetes-argocd
     targetRevision: feat/day2
     path: giropops-senhas/helm
@@ -15,5 +14,6 @@ spec:
     namespace: giropops-senhas
   syncPolicy:
     automated:
+      selfHeal: true
     syncOptions:
-      - CreateNamespace=truegit 
+      - CreateNamespace=true

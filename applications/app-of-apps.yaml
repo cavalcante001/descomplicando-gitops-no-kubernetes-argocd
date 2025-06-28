@@ -22,4 +22,4 @@ spec:
     automated:
       selfHeal: true
     syncOptions:
-      - CreateNamespace=truegit 
+      - CreateNamespace=true
